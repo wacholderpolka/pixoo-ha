@@ -225,4 +225,4 @@ def supported_characters():
     return FONT_PICO_8.keys()
 
 
-__all__ = (retrieve_glyph, supported_characters, FONT_PICO_8, FONT_GICKO)
+__all__ = (retrieve_glyph, supported_characters, FONT_PICO_8, FONT_GICKO, FONT_THIN)
