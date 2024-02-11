@@ -1,7 +1,7 @@
 from homeassistant.helpers.template import Template
 from homeassistant.exceptions import TemplateError
 
-def solar(pixoo, hass, page_data, FONT_PICO_8, FONT_GICKO, FONT_THIN):
+def solar(pixoo, hass, page_data, FONT_PICO_8, FONT_GICKO):
     for solar in page_data["PV"]:
         pixoo.clear()
         try:
