@@ -15,7 +15,7 @@ from .schemas.page_schema import PAGE_SCHEMA
 from .pages.solar import solar
 
 from .pixoo64._pixoo import Pixoo
-from .pixoo64._font import FONT_PICO_8, FONT_GICKO
+from .pixoo64._font import FONT_PICO_8, FONT_GICKO, FONT_THIN
 
 import logging
 
