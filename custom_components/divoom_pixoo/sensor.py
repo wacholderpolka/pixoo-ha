@@ -160,6 +160,8 @@ class Pixoo64(Entity):
                         pixoo.draw_text(rendered_text, tuple(text['position']), tuple(text['font_color']), FONT_PICO_8)
                     if text['font'] == "FONT_GICKO":
                         pixoo.draw_text(rendered_text.upper(), tuple(text['position']), tuple(text['font_color']), FONT_GICKO)
+                    if text['font'] == "FONT_THIN":
+                        pixoo.draw_text(rendered_text.upper(), tuple(text['position']), tuple(text['font_color']), FONT_THIN)
                 pixoo.push()
 
             if "PV" in current_page_data:
