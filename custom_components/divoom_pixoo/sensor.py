@@ -188,7 +188,7 @@ class Pixoo64(Entity):
                 pixoo.draw_image(img, tuple(img_pos))
 
             for message, position, color, font in zip(messages, positions, colors, fonts):
-                selected_font = FONT_PICO_8 if font == 'FONT_PICO_8' else FONT_GICKO
+                selected_font = FONT_PICO_8 if font == 'FONT_PICO_8' else FONT_THIN
                 if font == 'FONT_PICO_8':
                     pixoo.draw_text(message, tuple(position), tuple(color), selected_font)
                 else:
