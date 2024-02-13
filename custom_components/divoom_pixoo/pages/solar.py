@@ -5,11 +5,11 @@ def solar(pixoo, hass, page_data, FONT_PICO_8, FONT_GICKO):
     for solar in page_data["PV"]:
         pixoo.clear()
         try:
-            rendered_power = float(Template(solar['power'], hass).async_render())
-            rendered_storage = float(Template(solar['storage'], hass).async_render())
-            rendered_discharge = float(Template(solar['discharge'], hass).async_render())
-            rendered_powerhousetotal = float(Template(solar['powerhousetotal'], hass).async_render())
-            rendered_vomNetz = float(Template(solar['vomNetz'], hass).async_render())
+            rendered_power = int(Template(solar['power'], hass).async_render())
+            rendered_storage = int(Template(solar['storage'], hass).async_render())
+            rendered_discharge = int(Template(solar['discharge'], hass).async_render())
+            rendered_powerhousetotal = int(Template(solar['powerhousetotal'], hass).async_render())
+            rendered_vomNetz = int(Template(solar['vomNetz'], hass).async_render())
             rendered_time = str(Template(solar['time'], hass).async_render())
         except TemplateError as e:
             _LOGGER.error("Template render error: %s", e)
