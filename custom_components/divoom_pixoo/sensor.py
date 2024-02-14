@@ -165,7 +165,7 @@ class Pixoo64(Entity):
                 pixoo.push()
 
             if "PV" in current_page_data:
-                solar(pixoo, self.hass, current_page_data, FONT_PICO_8, FONT_GICKO)
+                solar(pixoo, self.hass, current_page_data, FONT_PICO_8, FONT_GICKO, FONT_THIN)
                 pixoo.push()
 
         await self.hass.async_add_executor_job(update)
