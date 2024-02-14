@@ -34,9 +34,9 @@ def solar(pixoo, hass, page_data, FONT_PICO_8, FONT_GICKO, FONT_THIN):
             pixoo.draw_text(f'{rendered_power}', (18, 5), grey, FONT_THIN)
 
         if rendered_discharge < 0: 
-            pixoo.draw_text(f'{rendered_discharge}', (18, 18), red, FONT_THIN)
+            pixoo.draw_text(f'{rendered_discharge}', (18, 21), red, FONT_THIN)
         else:
-            pixoo.draw_text(f'{rendered_discharge}', (18, 18), green, FONT_THIN)
+            pixoo.draw_text(f'{rendered_discharge}', (18, 21), green, FONT_THIN)
 
         if rendered_storage >= 0:
             pixoo.draw_image("/config/custom_components/divoom_pixoo/img/akku00-20.png", (1, 16))
@@ -49,7 +49,7 @@ def solar(pixoo, hass, page_data, FONT_PICO_8, FONT_GICKO, FONT_THIN):
         if rendered_storage >= 80:
             pixoo.draw_image("/config/custom_components/divoom_pixoo/img/akku80-100.png", (1, 16))
 
-        pixoo.draw_text(f"{rendered_storage}%", (18, 25), white, FONT_PICO_8) #FONT_PICO_8
+        pixoo.draw_text(f"{rendered_storage}%", (35, 21), white, FONT_PICO_8) #FONT_PICO_8
 
         pixoo.draw_image("/config/custom_components/divoom_pixoo/img/haus.png", (1, 32))
         pixoo.draw_text(f"{rendered_powerhousetotal}", (18, 37), blue, FONT_THIN)
