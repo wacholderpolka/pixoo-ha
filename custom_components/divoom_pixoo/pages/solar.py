@@ -33,7 +33,7 @@ def solar(pixoo, hass, page_data, FONT_PICO_8, FONT_GICKO):
         else:
             pixoo.draw_text(f'{rendered_power}', (18, 5), grey, FONT_GICKO)
 
-        if rendered_discharge > 0: 
+        if rendered_discharge < 0: 
             pixoo.draw_text(f'{rendered_discharge}', (18, 18), red, FONT_GICKO)
         else:
             pixoo.draw_text(f'{rendered_discharge}', (18, 18), green, FONT_GICKO)
