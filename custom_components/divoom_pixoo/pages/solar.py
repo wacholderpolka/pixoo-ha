@@ -29,7 +29,7 @@ def solar(pixoo, hass, page_data, FONT_PICO_8, FONT_GICKO, FONT_THIN):
         pixoo.draw_image("/config/custom_components/divoom_pixoo/img/sunpower.png", (1, 0))
 
         if rendered_power >= 1:
-            pixoo.draw_text(f'{rendered_power}', (17, 5), yellow, FONT_THIN)
+            pixoo.draw_text(f'{rendered_power}', (21, 5), yellow, FONT_THIN)
         else:
             pixoo.draw_text(f'{rendered_power}', (21, 5), grey, FONT_THIN)
 
