@@ -164,4 +164,4 @@ https://github.com/gickowtf/pixoo-homeassistant/discussions
 ## Disclaimer
 This is not official software from Divoom.
 It is a custom integration created by me (gickowtf) and therefore Divoom is not responsible for any damages/problems caused by this integration, nor does Divoom provide any end-user support for the integration.
-Use this integration at your own risk.
+Use this integration at your own risk..
